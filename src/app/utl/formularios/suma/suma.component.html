@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-6">
+  <div class="mb">
+    <label for="" class="form-label">Numero 1:</label>
+    <input [(ngModel)]="num1" type="text" class="form-control" name="num1" placeholder="Numero1">
+  </div>
+  <div class="mb">
+    <label for="" class="form-label">Numero 2:</label>
+    <input [(ngModel)]="num2" type="text" class="form-control" name="num2" placeholder="Numero2">
+
+  </div>
+  <div class="mb">
+    <button (click)="sumar()" class="btn btn-primary">Calcular</button>
+  </div>
+  </div>
+  <div class="col-md-6">  <h2>La suma es:  {{suma}}</h2></div>
+</div>
