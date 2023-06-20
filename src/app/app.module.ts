@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './utl/formularios/operas/operas.module';
-import { DistanciaPuntosComponent } from './tarea/distancia-puntos/distancia-puntos.component';
+import { DistanciaPuntosModule } from './tarea/distancia-puntos.module';
 
 @NgModule({
   declarations: [
@@ -21,14 +21,14 @@ import { DistanciaPuntosComponent } from './tarea/distancia-puntos/distancia-pun
     IdgsComponent,
     IricComponent,
     MenuComponent,
-    SumaComponent,
-    DistanciaPuntosComponent
+    SumaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    OperasModule
+    OperasModule,
+    DistanciaPuntosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

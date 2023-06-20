@@ -6,19 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./distancia-puntos.component.css']
 })
 export class DistanciaPuntosComponent {
-  num1!:number;
-  num2!:number;
-  num3!:number;
-  num4!:number;
+  num1!:number;//x1
+  num2!:number;//y1
+  num3!:number;//x2
+  num4!:number;//y2
   resultado!:number;
 
   calcular(){
     this.resultado=
     Math.sqrt(
-      (Math.pow((this.num2-this.num1),2))
+      (Math.pow((this.num3-this.num1),2))
       +
-      (Math.pow((this.num4-this.num3),2))
+      (Math.pow((this.num4-this.num2),2))
       );
     }
 
-  }
+}

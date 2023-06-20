@@ -1,6 +1,12 @@
-.Contenedor{
+.container{
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 1rem auto;
   max-width: 600px;
   }
+  .contenedor{
+    display:flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    max-width: 600px;
+    }
