@@ -24,11 +24,18 @@
           <th>Correo</th>
           <th><button (click)="showImage()" class="btn btn-primary">
             {{muestraImg?'Ocultar ':'Muestra '}}Imagen:</button></th>
+<<<<<<< HEAD
           <th>Calificación {{alumnoTitle}} </th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let alumno of alumnosIric | alumnoFilter:listFilter">
+=======
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let alumno of alumnosIric">
+>>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
           <td>{{alumno.matricula}}</td>
           <td>{{alumno.nombre}}</td>
           <td>{{alumno.edad}}</td>
@@ -37,7 +44,10 @@
             [title]="alumno.nombre"
             [style.width.px]="imageWidth"
             [style.margin.px]="imageMargin"></td>
+<<<<<<< HEAD
             <td><app-calificacion-alum (calificaClick)="onCalificaClick($event)" [califica]="alumno.calif"></app-calificacion-alum></td>
+=======
+>>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
         </tr>
       </tbody>
     </table>

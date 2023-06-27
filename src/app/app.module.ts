@@ -12,8 +12,11 @@ import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './utl/formularios/operas/operas.module';
 import { DistanciaPuntosModule } from './tarea/distancia-puntos.module';
+<<<<<<< HEAD
 import { CalificacionAlumComponent } from './utl/calificacion-alum/calificacion-alum.component';
 import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
+=======
+>>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
 
 @NgModule({
   declarations: [
@@ -23,9 +26,13 @@ import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
     IdgsComponent,
     IricComponent,
     MenuComponent,
+<<<<<<< HEAD
     SumaComponent,
     CalificacionAlumComponent,
     AlumnoFilterPipe
+=======
+    SumaComponent
+>>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
   ],
   imports: [
     BrowserModule,
