@@ -1,0 +1,51 @@
+import { Component } from '@angular/core';
+import { IAlumnosIric } from '../alumnos-iric';
+
+@Component({
+  selector: 'app-iric',
+  templateUrl: './iric.component.html',
+  styleUrls: ['./iric.component.css']
+})
+export class IricComponent {
+
+  imageWidth:number=50;
+  imageMargin:number=2;
+  muestraImg:boolean=true;
+  listFilter:string='';
+  alumnoTitle!: string;
+
+  showImage():void{
+    this.muestraImg=!this.muestraImg;
+  }
+  alumnosIric:IAlumnosIric[]=[
+    {
+      matricula:1234,
+      nombre:'pedro',
+      edad:23,
+      correo:'pedro@gmail.com',
+      foto: 'https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg',
+      calif:6.7
+    },
+    {
+      matricula:1234,
+      nombre:'Paulina',
+      edad:23,
+      correo:'paulina@gmail.com',
+      foto:'data:image/jpeg;base64,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',
+      calif:6.7
+    },
+    {
+      matricula:1234,
+      nombre:'Dario',
+      edad:27,
+      correo:'dario@gmail.com',
+      foto:'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      calif:6.7
+    },
+  ];
+
+  onCalificaClick(message:string) {
+    this.alumnoTitle = `${message}`;
+  }
+
+}
