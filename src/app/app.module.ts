@@ -7,16 +7,15 @@ import { NamesGrupos902 } from './utl/grupo902.component';
 import { IdgsComponent } from './utl/idgs/idgs.component';
 import { IricComponent } from './utl/iric/iric.component';
 import { MenuComponent } from './utl/menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './utl/formularios/operas/operas.module';
 import { DistanciaPuntosModule } from './tarea/distancia-puntos.module';
-<<<<<<< HEAD
 import { CalificacionAlumComponent } from './utl/calificacion-alum/calificacion-alum.component';
 import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
-=======
->>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
+import { AlumnosReactiveComponent } from './formularios/alumnos-reactive/alumnos-reactive.component';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -26,20 +25,19 @@ import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
     IdgsComponent,
     IricComponent,
     MenuComponent,
-<<<<<<< HEAD
     SumaComponent,
     CalificacionAlumComponent,
-    AlumnoFilterPipe
-=======
-    SumaComponent
->>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
+    AlumnoFilterPipe,
+    AlumnosReactiveComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     OperasModule,
-    DistanciaPuntosModule
+    DistanciaPuntosModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,50 +6,43 @@
     <div class="row">
       <div class="col-md-2">Filtrar por:</div>
       <div class="col-md-4">
-        <input [(ngModel)]="listFilter" class="form-control" name="filter" type="text">
+       <label for=""></label>
+        <input [(ngModel)]="listFilter" type="text" class="form-control" name="filter">
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-<h3>Filtro: {{listFilter}}</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Filtro: {{listFilter}}</h3>
+      </div>
     </div>
-  </div>
-  <div class="table-responsive">
-    <table class="table" *ngIf="alumnosIric.length">
-      <thead>
-        <tr>
-          <th>Matricula</th>
-          <th>Nombre</th>
-          <th>Edad</th>
-          <th>Correo</th>
-          <th><button (click)="showImage()" class="btn btn-primary">
-            {{muestraImg?'Ocultar ':'Muestra '}}Imagen:</button></th>
-<<<<<<< HEAD
-          <th>Calificación {{alumnoTitle}} </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let alumno of alumnosIric | alumnoFilter:listFilter">
-=======
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let alumno of alumnosIric">
->>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
-          <td>{{alumno.matricula}}</td>
-          <td>{{alumno.nombre}}</td>
-          <td>{{alumno.edad}}</td>
-          <td>{{alumno.correo}}</td>
-          <td><img *ngIf="muestraImg" [src]="alumno.foto"
-            [title]="alumno.nombre"
-            [style.width.px]="imageWidth"
-            [style.margin.px]="imageMargin"></td>
-<<<<<<< HEAD
+    <div class="table-responsive">
+      <table class="table" *ngIf="alumnosIric.length" >
+        <thead>
+          <tr>
+            <th>
+              <button (click)="showImage()" class="btn btn-primary">{{muestraImg?'Ocultar ':'Muestra '}}Imagen</button>
+            </th>
+            <th>Matricula</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Correo</th>
+            <th>Calificacion {{alumnoTitle}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let alumno of alumnosIric | alumnoFilter:listFilter">
+            <td><img *ngIf="muestraImg" [src]="alumno.foto"
+              [title]="alumno.nombre"
+              [style.width.px]="imageWidth"
+              [style.margin.px]="imageMargin"> </td>
+            <td>{{alumno.matricula}}</td>
+            <td>{{alumno.nombre}}</td>
+            <td>{{alumno.edad}}</td>
+            <td>{{alumno.correo}}</td>
             <td><app-calificacion-alum (calificaClick)="onCalificaClick($event)" [califica]="alumno.calif"></app-calificacion-alum></td>
-=======
->>>>>>> 19c5f82ff8161b0b5e495921271579ba57350ffb
-        </tr>
-      </tbody>
-    </table>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
