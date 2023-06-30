@@ -14,7 +14,7 @@ import { OperasModule } from './utl/formularios/operas/operas.module';
 import { DistanciaPuntosModule } from './tarea/distancia-puntos.module';
 import { CalificacionAlumComponent } from './utl/calificacion-alum/calificacion-alum.component';
 import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
-import { AlumnosReactiveComponent } from './formularios/alumnos-reactive/alumnos-reactive.component';
+import { AlumnosReactiveComponent } from './utl/formularios/alumnos-reactive/alumnos-reactive.component';
 import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
